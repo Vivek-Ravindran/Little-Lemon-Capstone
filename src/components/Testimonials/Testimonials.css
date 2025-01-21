@@ -1,0 +1,56 @@
+.testimonials-bg {
+  background-color: #495e57;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.testimonials h1 {
+  text-align: center;
+  padding: 4rem;
+  font-size:x-large ;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.testimonials {
+  grid-column: 3 / 11;
+  grid-row: 2;
+  padding-bottom: 7rem;
+  
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  grid-gap: 10px;
+}
+
+.testimonials img {
+  width: 30px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    grid-column: 1 / 13;
+    padding: 32px;
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .testimonials {
+    grid-column: 1 / 13;
+    padding: 16px;
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
