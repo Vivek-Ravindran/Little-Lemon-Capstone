@@ -1,0 +1,39 @@
+.confirm-bg {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(255, 255, 255);
+}
+
+.confirm-page {
+
+  grid-column: 3 / 11;
+  grid-row: 2;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.confirm-page img{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  min-width: auto;
+  min-height: auto
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .confirm-page {
+    grid-column: 1 / 13;
+    padding: 32px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .confirm-page {
+    grid-column: 1 / 13;
+    padding: 16px;
+  }
+}
